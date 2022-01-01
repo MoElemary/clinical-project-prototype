@@ -1,0 +1,44 @@
+{% extends "registration_system/base.html" %}
+{% block content %}
+    {% for post in Nurse %}
+            <article class="media content-section">
+              <div class="media-body">
+                <div class="article-metadata">
+                  <a class="mr-2" href="#"><b>ID: </b>{{ post.Id }}</a>
+                    <div
+                  <a class="mr-2" href="#"><b>First name: </b>{{ post.First_name }}</a>
+                    <div
+                    <a class="text-muted"><b>Last name: </b>{{ post.Last_name }}</a>
+                  </div>s
+                    <div
+                    <a class="text-muted"><b>Email: </b>{{ post.Email }}</a>
+                    <div
+                    <a class="text-muted"><b>Password: </b>{{ post.Password }}</a>
+                    <div
+                    <a class="text-muted"><b>group number: </b>{{ post.group_number }}</a>
+                    <div
+                    <a class="text-muted"><b>Supervisor: </b>{{ post.Supervisor }}</a>
+                    <div
+                    <a class="text-muted"><b>Assigned room: </b>{{ post.Assigned_Room }}</a>
+                    <div
+                    <a class="text-muted"><b>Assigned patient: </b>{{ post.Assigned_Patient }}</a>
+
+
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+
+
+                </div>
+                <a class="article-title" href="#">{{ post.a }}</a>
+                <p class="article-content">{{ post.content }}</p>
+              </div>
+            </article>
+<img src="x_ray2.jpg" alt="x_ray">
+
+    {% endfor %}
+{% endblock content %}
